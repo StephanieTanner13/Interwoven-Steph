@@ -1,0 +1,106 @@
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+    "email":"test@email.com",
+    "password":"kdfkiwkl#9023kldlk"
+}
+
+
+###
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+    "email":"test3@email.com",
+    "password":"pa$$w0rd"
+}
+
+
+###
+POST http://localhost:8080/auth/sign-up
+Content-Type: application/json
+
+{
+    "email":"test3@email.com",
+    "password":"pa$$w0rd",
+    "first_name":"tanner",
+    "last_name":"LastNamesss"
+}
+
+###
+GET http://localhost:8080/profile?userId=62032b37c911458572150e9f
+# Content-Type: application/json
+
+# {
+#     "userId":"62032b37c911458572150e9f"
+# }
+
+###
+GET http://localhost:8080/unaprovedStories
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZW1haWwuY29tIiwidXNlcklkIjoiNjIwMzJiMzdjOTExNDU4NTcyMTUwZTlmIiwiaXNNb2QiOmZhbHNlLCJpYXQiOjE2NDQzNzQ4NTMsImV4cCI6MTY0NDM3ODQ1M30.6zt0Kp3jsxh6ieBOcpHXeTUrdQMOcUfdPaciqZr1Mvw
+# Content-Type: application/json
+
+# {
+#     "userId":"62032b37c911458572150e9f"
+# }
+
+###
+POST http://localhost:8080/auth/changePassword
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZW1haWwuY29tIiwidXNlcklkIjoiNjIwMzJiMzdjOTExNDU4NTcyMTUwZTlmIiwiaXNNb2QiOmZhbHNlLCJpYXQiOjE2NDQzNzQ4NTMsImV4cCI6MTY0NDM3ODQ1M30.6zt0Kp3jsxh6ieBOcpHXeTUrdQMOcUfdPaciqZr1Mvw
+
+{
+    "oldPassword":"kdfkiwkl#9023kldlk",
+    "newPassword":"kdfkiwkl#9023kldlk"
+}
+
+###
+
+GET http://localhost:8080/search?country=USA
+Content-Type: application/json
+
+###
+POST http://localhost:8080/admin/getNonApprovedPosts
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZW1haWwuY29tIiwidXNlcklkIjoiNjIwMzJiMzdjOTExNDU4NTcyMTUwZTlmIiwiaXNNb2QiOnRydWUsImlhdCI6MTY0NDk4NTY4NywiZXhwIjoxNjQ0OTg5Mjg3fQ.xhq9jXFPHdusHU7oaYVdtlqRhaj3eI_v0MI7_dysTIg
+
+{
+
+}
+
+
+###
+
+POST http://localhost:8080/admin/approveStory
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZW1haWwuY29tIiwidXNlcklkIjoiNjIwMzJiMzdjOTExNDU4NTcyMTUwZTlmIiwiaXNNb2QiOnRydWUsImlhdCI6MTY0NDk4NTY4NywiZXhwIjoxNjQ0OTg5Mjg3fQ.xhq9jXFPHdusHU7oaYVdtlqRhaj3eI_v0MI7_dysTIg
+
+{
+    "storyId":"6205d1e9eae66229f31dc9bf"
+}
+
+###
+
+POST http://localhost:8080/story/addStory
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZW1haWwuY29tIiwidXNlcklkIjoiNjIwMzJiMzdjOTExNDU4NTcyMTUwZTlmIiwiaXNNb2QiOnRydWUsImlhdCI6MTY0NDU0NjQyMCwiZXhwIjoxNjQ0NTUwMDIwfQ.U7lBx7qi9azbEm0uphiezk3MDF-Ot_SggeazK9Dz0oM
+
+{
+    "title":"Title thing",
+    "content":"This is qualiuty cibnnmer",
+    "country_code":"United-States"
+}
+
+POST http://localhost:8080/story/deleteStory
+Content-Type: application/json
+Authorization: Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZW1haWwuY29tIiwidXNlcklkIjoiNjIwMzJiMzdjOTExNDU4NTcyMTUwZTlmIiwiaXNNb2QiOnRydWUsImlhdCI6MTY0NDU0NjQyMCwiZXhwIjoxNjQ0NTUwMDIwfQ.U7lBx7qi9azbEm0uphiezk3MDF-Ot_SggeazK9Dz0oM
+
+{
+    "title":"Title thing",
+    "content":"This is qualiuty cibnnmer",
+    "country_code":"United-States"
+}
+
+###
+POST http://localost:

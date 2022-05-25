@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+//Whole Site
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+p {
+    line-height: 2em;
+}
+
+//main page
+form {
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+input, select {
+    width: 300px;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: .6em;
+    margin: 1em;
+}
+select {
+    font-size: 1em;
+}
+
+
+a:hover, input:focus, select:focus {
+    outline: none;
+    border-bottom: 2px solid #D20F1C;
+}
+textarea:focus {
+    outline: none;
+    border: 2px solid #D20F1C;
+}
+.search-icon {
+    width: 25px;
+    height: auto;
+}
+.world-map {
+    width: 100vw;
+    height: auto;
+}
+.image-path:hover {
+    //fill: #EEF0F2;
+    fill: #DADDD8;
+  }
+
+  //home
+  .home-style {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .logo-2 {
+      padding-left: 1em;
+      width: 60px;
+      height: auto;
+  }
+  a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      margin: 1em;
+  }
+  //nav
+  nav{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+  }
+  nav div {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-content: flex-end;
+      height: 3.3em;
+  }
+  //not working for some reason. I want the page that we are on to have red text as the color
+//   a .active{
+//       color: #D20F1C !important;
+//   }
+
+//form pages: signup, login
+.form-page {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-page h1, .form-page p {
+    text-align: center;
+}
+#submitButton, button {
+    background-color: #D20F1C;
+    border: none;
+    color: #FAFAFF;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+//profile page
+.profile{
+    padding: 1em;
+}
+.profile h2{
+    text-align: center;
+}
+.story {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add-tags input{
+    border: none !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+    margin-left: 1em !important;
+    max-width: 100px !important;
+}
+.add-tags ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 600px;
+    border: 1px solid #D20F1C;
+    padding: 1em;
+}
+.add-tags li {
+    margin: .2em .2em;
+    padding: .2em 1em;
+    background-color: #FAFAFF;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 5px;
+}
+.x {
+    height: 12px;
+    width: auto;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+//admin portion
+.storyForApproval{
+    border: 1px solid #DADDD8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+.storyForApproval div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+// Tanner here,
+// In case we're actually using scss, and my css gets deleted, here it is again:
+// .results-page {
+// max-width: 1000px;
+// margin: auto;
+// }
+
+// #search-results {
+// border-radius: 20px;
+// display: grid;
+// gap: 10px;
+// padding: 20px;
+// }
+
+// .story {
+// /* max-width: 1000px;
+// margin-left: auto;
+// margin-right: auto; */
+// background-color: whitesmoke;
+// padding: 20px;
+// }
+
+// .storyTitle {
+// background-color: lightgrey;
+// padding-top: 10px;
+// padding-right: 10px;
+// padding-left: 10px;
+// border-radius: 5px 5px 0 0;
+// text-align:center;
+// width: 80%;
+// margin: auto;
+// margin-bottom: 0;
+// }
+
+// .storyContent {
+// background-color: lightgrey;
+// padding: 10px;
+// border-radius: 5px 5px 0 0;
+// margin-top: 0px;
+// }

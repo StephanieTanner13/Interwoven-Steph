@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interwoven | </title>
+    <link rel="stylesheet" href="../css/main.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo-2" src="../images/logo-2.png" alt="Interwoven Logo">
+            <div>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a id="logIn" href="login.html">Login</a>
+                <a id="signUp" href="signup.html" class="active">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+    <div class="form-page">
+    <h1>Sign Up</h1>
+    <p>Everyone has a story. We want to hear yours. Sign up to create a profile and share your story on Interwoven. The world needs to hear your story. <br> Password must have at least one number, one uppercase letter, one lowercase letter and be at least 8 characters</p>
+    <script src="../scripts/signUp.js"></script>
+    <div id="signup" class="inputs">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        <!-- password must contain at least one number,one uppercase letter, one lowercase letter and be at least 8 or more characters -->
+        <!-- confirm password -->
+        <!-- <input type="password" id="password" name="userPassword" placeholder="Password" required> -->
+        <input id="submitButton" type="submit" onclick="signUp()">
+    </div>
+</div>
+<script src="../scripts/islogin.js"></script>
+</body>
+
+</html>
