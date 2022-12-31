@@ -126,10 +126,6 @@ nav div {
   margin-right: auto;
 }
 
-.form-page .inputs {
-  text-align: center;
-}
-
 .form-page h1, .form-page p {
   text-align: center;
 }
@@ -152,63 +148,11 @@ nav div {
   text-align: center;
 }
 
-.results-page {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.results-page h1 {
-  padding: 1rem;
-  margin: 1rem;
-  border-bottom: 1px solid black;
-}
-
-#search-results {
-  border-radius: 2rem;
-  display: grid;
-  gap: 1rem;
-  padding: 2rem;
-  grid-template-columns: auto auto auto;
-}
-
-#story {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#story .story {
-  min-width: 300px;
-  width: 80%;
-  max-width: 800px;
-}
-
 .story {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* max-width: 800px; */
-  border: 1px solid #DADDD8;
-  padding: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.storyTitle {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 5px 5px 0 0;
-  text-align:center;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 0;
-}
-
-.storyContent {
-  padding: 10px;
-  border-radius: 5px 5px 0 0;
-  margin-top: 0px;
-}
-
 
 .add-tags input {
   border: none !important;
@@ -258,7 +202,7 @@ nav div {
   margin-left: 1em;
 }
 
-.storyForApproval, .stories {
+.storyForApproval {
   border: 1px solid #DADDD8;
   max-width: 800px;
   margin-left: auto;
@@ -277,12 +221,5 @@ nav div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.search {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
